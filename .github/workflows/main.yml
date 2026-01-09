@@ -11,7 +11,7 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Build Release
-        run: cargo build --release --no-default-features --features=media-controls,mpris,libraries
+        run: cargo build --release --no-default-features --features=mpv
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
