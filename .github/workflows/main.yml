@@ -11,7 +11,7 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Build Release
-        run: cargo build --release --no-default-features --features=mpv,rustypipe,invidious
+        run: cargo build --release --no-default-features --features=rustypipe,invidious,mpv-shared
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
